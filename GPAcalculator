@@ -1,0 +1,54 @@
+# Assignment 1 - Programming Basics
+# Group 10 - Guilherme & Jabin & Ruien
+
+print("Welcome to the Grade Registry Program\n")
+
+names = []
+grades = []
+
+while True:
+    print("Would you like to add a new student? y(yes),n(no):")
+    answer = input().strip().lower()
+
+    if answer not in ["y", "yes", "n", "no"]:
+        print("\nIncorrect Input, please enter y(yes)/n(no).\n")
+        continue
+
+    if answer in ["n", "no"]:
+        break
+
+    print("\nEnter the student's name:")
+    name = input().strip()
+    names.append(name)
+
+    total = 0.0
+    count = 0
+
+    print("\nEnter GPA for each subject (enter -1 to finish):")
+    while True:
+        gpa_input = input().strip()
+        try:
+            gpa = float(gpa_input)
+        except ValueError:
+            print("Incorrect Input, please enter y(yes)/n(no).")
+            continue
+
+        if gpa == -1:
+            break
+        elif gpa < 0 or gpa > 4.3:
+            print("GPA must be between 0 and 4.3. Try again.")
+            continue
+
+        total += gpa
+        count += 1
+
+    if count > 0:
+        average_gpa = round(total / count, 2)
+    else:
+        average_gpa = 0.0
+
+    grades.append(average_gpa)
+
+print("\nThis is the list of students in the system and their corresponding average GPA:")
+for i in range(len(names)):
+    print(f"{names[i]}  {grades[i]}")

@@ -27,15 +27,16 @@ while True:
     print("\nEnter GPA for each subject (enter -1 to finish):")
     while True:
         gpa_input = input().strip()
-        try:
-            gpa = float(gpa_input)
-        except ValueError:
-            print("Incorrect Input, please enter y(yes)/n(no).")
+
+        if gpa_input == "-1":
+            break
+        elif not (gpa_input.replace(".", "", 1).isdigit()):
+            print("Incorrect Input, please enter a number.")
             continue
 
-        if gpa == -1:
-            break
-        elif gpa < 0 or gpa > 4.3:
+        gpa = float(gpa_input)
+
+        if gpa < 0 or gpa > 4.3:
             print("GPA must be between 0 and 4.3. Try again.")
             continue
 

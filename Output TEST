@@ -83,3 +83,49 @@ n
 This is the list of students in the system and their corresponding average GPA:
 Guilherme  0.0
 Jabin  4.2
+
+TEST 3: (Matches the one in the pdf)
+
+Welcome to the Grade Registry Program
+
+Would you like to add a new student? y(yes),n(no):
+yEs
+
+Enter the student's name:
+Sarah Gray
+
+Enter GPA for each subject (enter -1 to finish):
+2.3
+4.0
+-1
+Would you like to add a new student? y(yes),n(no):
+Ya
+
+Incorrect Input, please enter y(yes)/n(no).
+
+Would you like to add a new student? y(yes),n(no):
+Yes
+
+Enter the student's name:
+John Doe
+
+Enter GPA for each subject (enter -1 to finish):
+3.2
+3.9
+2.5
+-1
+Would you like to add a new student? y(yes),n(no):
+YEs
+
+Enter the student's name:
+Steven Grant
+
+Enter GPA for each subject (enter -1 to finish):
+-1
+Would you like to add a new student? y(yes),n(no):
+n
+
+This is the list of students in the system and their corresponding average GPA:
+Sarah Gray  3.15
+John Doe  3.2
+Steven Grant  0.0

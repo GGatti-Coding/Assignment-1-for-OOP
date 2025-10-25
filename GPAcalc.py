@@ -1,6 +1,6 @@
 '''
 Assignment 1 - Programming Basics
-Group 10 - Guilherme & Jabin
+Group 10 - Guilherme & Jabin & Ruien
 '''
 
 # Variables

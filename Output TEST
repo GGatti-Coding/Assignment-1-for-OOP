@@ -1,0 +1,85 @@
+TEST 1:
+Welcome to the Grade Registry Program
+
+Would you like to add a new student? y(yes),n(no):
+y
+
+Enter the student's name:
+Ryan
+
+Enter GPA for each subject (enter -1 to finish):
+3.8
+4.0
+3.7
+-1
+Would you like to add a new student? y(yes),n(no):
+n
+
+This is the list of students in the system and their corresponding average GPA:
+Ryan  3.83
+
+
+TEST2:
+Welcome to the Grade Registry Program
+
+Would you like to add a new student? y(yes),n(no):
+y
+
+Enter the student's name:
+Alice
+
+Enter GPA for each subject (enter -1 to finish):
+4.0
+3.9
+-1
+Would you like to add a new student? y(yes),n(no):
+y
+
+Enter the student's name:
+Bob
+
+Enter GPA for each subject (enter -1 to finish):
+3.4
+3.6
+3.8
+-1
+Would you like to add a new student? y(yes),n(no):
+n
+
+This is the list of students in the system and their corresponding average GPA:
+Alice  3.95
+Bob  3.6
+
+TEST3:
+Welcome to the Grade Registry Program
+
+Would you like to add a new student? y(yes),n(no):
+y
+
+Enter the student's name:
+Guilherme
+
+Enter GPA for each subject (enter -1 to finish):
+-1
+Would you like to add a new student? y(yes),n(no):
+YYS
+
+Incorrect Input, please enter y(yes)/n(no).
+
+Would you like to add a new student? y(yes),n(no):
+YeS
+
+Enter the student's name:
+Jabin
+
+Enter GPA for each subject (enter -1 to finish):
+4.3
+4.1
+4.2
+-1
+Would you like to add a new student? y(yes),n(no):
+n
+
+This is the list of students in the system and their corresponding average GPA:
+Guilherme  0.0
+Jabin  4.2
